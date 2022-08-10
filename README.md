@@ -1,9 +1,9 @@
 # Дипломный проект профессии «Тестировщик»
 
 ## Документы
-* [План автоматизации](https://github.com/NataliaGracheva/QA-diploma-project/blob/master/docs/Plan.md)
-* [Отчет по итогам тестирования](https://github.com/NataliaGracheva/QA-diploma-project/blob/master/docs/Report.md)
-* [Отчет по итогам автоматизации](https://github.com/NataliaGracheva/QA-diploma-project/blob/master/docs/Summary.md)
+* [План автоматизации](https://github.com/
+* [Отчет по итогам тестирования](https://github.com/
+* [Отчет по итогам автоматизации](https://github.com/
 
 Дипломный проект представляет собой автоматизацию тестирования комплексного сервиса, взаимодействующего с СУБД и API Банка.
 
