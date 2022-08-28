@@ -1,9 +1,9 @@
 # Дипломный проект профессии «Тестировщик»
 
 ## Документы
-* [План автоматизации](https://github.com/PavelAksenchenko/qa_diploma_project/blob/master/docs/Plan.md)
-* [Отчет по итогам тестирования](https://github.com/PavelAksenchenko/qa_diploma_project/blob/master/docs/Report.md)
-* [Отчет по итогам автоматизации](https://github.com/PavelAksenchenko/qa_diploma_project/blob/master/docs/Summary.md)
+* [План автоматизации]
+* [Отчет по итогам тестирования]
+* [Отчет по итогам автоматизации]
 
 Дипломный проект представляет собой автоматизацию тестирования комплексного сервиса, взаимодействующего с СУБД и API Банка.
 
@@ -26,25 +26,24 @@
 * склонировать репозиторий `git clone`
 * для запуска контейнеров с MySql, PostgreSQL и Node.js использовать команду `docker-compose up -d --build` (необходим установленный Docker); чтобы образ не пересобирался каждый раз необходимо убрать флаг --build
 * запуск приложения:
-    * для запуска под MySQL использовать команду 
+    * для запуска под MySQL использовать команду
     ```
     java -Dspring.datasource.url=jdbc:mysql://localhost:3306/app -jar aqa-shop.jar
     ```
-    * для запуска под PostgreSQL использовать команду 
+    * для запуска под PostgreSQL использовать команду
     ```
     java -Dspring.datasource.url=jdbc:postgresql://localhost:5432/app -jar aqa-shop.jar
     ```
 * запуск тестов (Allure):
-   * для запуска под MySQL использовать команду 
+    * для запуска под MySQL использовать команду
    ```
    gradlew -Ddb.url=jdbc:mysql://localhost:3306/app clean test
    ```
-   * для запуска под PostgreSQL использовать команду 
+    * для запуска под PostgreSQL использовать команду
    ```
    gradlew -Ddb.url=jdbc:postgresql://localhost:5432/app clean test
    ```
-    *По умолчанию тесты запускаются для "http://localhost:8080/", чтобы изменить адрес, необходимо дополнительно указать `-Dsut.url=...`  
-    *Чтобы использовать для подключения к БД логин и пароль отличные от указанных по умолчанию, необходимо дополнительно указать `-Ddb.user=...` и `-Ddb.password=...`
+  *По умолчанию тесты запускаются для "http://localhost:8080/", чтобы изменить адрес, необходимо дополнительно указать `-Dsut.url=...`  
+  *Чтобы использовать для подключения к БД логин и пароль отличные от указанных по умолчанию, необходимо дополнительно указать `-Ddb.user=...` и `-Ddb.password=...`
 * для получения отчета (Allure) использовать команду `gradlew allureServe`
 * после окончания тестов завершить работу приложения (Ctrl+C), остановить контейнеры командой `docker-compose down`
-
